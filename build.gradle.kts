@@ -24,8 +24,10 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("javax.validation:validation-api:2.0.1.Final")
-    runtimeOnly("com.h2database:h2")
+	implementation("org.junit.jupiter:junit-jupiter:5.6.0")
+	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.assertj:assertj-core:3.8.0")
 }
 
 tasks.withType<KotlinCompile> {
